@@ -1,0 +1,33 @@
+{
+  "documents": [
+    {
+      "id": "doc-cache",
+      "title": "Browser Cache Notes",
+      "text": "Cache storage and local persistence matter for browser AI experiments. Warm runs should reuse prepared artifacts when the scenario allows it. Result reports need to call out cold and warm state explicitly."
+    },
+    {
+      "id": "doc-worker",
+      "title": "Worker Isolation Notes",
+      "text": "Workers keep heavy compute away from the main thread. They do not eliminate model load time, but they reduce UI jank and protect interaction latency during inference."
+    },
+    {
+      "id": "doc-rag",
+      "title": "RAG Pipeline Notes",
+      "text": "A baseline RAG loop ingests documents, chunks them into retrieval units, embeds those chunks, ranks candidates, and answers with explicit citations from the matched sources."
+    }
+  ],
+  "questions": [
+    {
+      "query": "Which note explains why cold and warm cache state must be reported explicitly?",
+      "expectedDocumentId": "doc-cache"
+    },
+    {
+      "query": "Which note talks about keeping compute off the main thread to reduce UI jank?",
+      "expectedDocumentId": "doc-worker"
+    },
+    {
+      "query": "Which note describes chunking, ranking, and answers with citations?",
+      "expectedDocumentId": "doc-rag"
+    }
+  ]
+}
