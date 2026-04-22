@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "repo": "exp-rag-browser-pipeline",
+    "commit": "536a144",
+    "timestamp": "2026-04-22T06:14:00.691Z",
+    "owner": "ai-webgpu-lab",
+    "track": "ml",
+    "scenario": "browser-rag-fixture",
+    "notes": "deterministic fixture; docs=3; chunks=6; questions=3; automation=playwright-chromium",
+    "capture_context": {
+      "tool": "playwright-chromium",
+      "browser_name": "Chromium",
+      "browser_version": "147.0.7727.15",
+      "headless": true,
+      "captured_at": "2026-04-22T06:14:00.802Z",
+      "captured_by": "zzragida"
+    }
+  },
+  "environment": {
+    "browser": {
+      "name": "Chrome",
+      "version": "147.0.7727.15"
+    },
+    "os": {
+      "name": "Linux",
+      "version": "unknown"
+    },
+    "device": {
+      "name": "Linux x86_64",
+      "class": "desktop-high",
+      "cpu": "16 threads",
+      "memory_gb": 16,
+      "power_mode": "unknown"
+    },
+    "gpu": {
+      "adapter": "not-applicable",
+      "required_features": [],
+      "limits": {}
+    },
+    "backend": "mixed",
+    "fallback_triggered": false,
+    "worker_mode": "main",
+    "cache_state": "cold"
+  },
+  "workload": {
+    "kind": "rag",
+    "name": "browser-rag-fixture",
+    "input_profile": "3-docs-3-questions",
+    "dataset": "rag-fixture-v1"
+  },
+  "metrics": {
+    "common": {
+      "time_to_interactive_ms": 214.3,
+      "init_ms": 9.6,
+      "success_rate": 1,
+      "peak_memory_note": "16 GB reported by browser",
+      "error_type": ""
+    },
+    "rag": {
+      "ingest_ms_per_page": 0.17,
+      "chunk_count": 6,
+      "embed_total_ms": 9.6,
+      "retrieve_ms": 0.13,
+      "rerank_ms": 0,
+      "answer_ttft_ms": 18.37,
+      "answer_total_ms": 31.03,
+      "citation_hit_rate": 1
+    }
+  },
+  "status": "success",
+  "artifacts": {
+    "raw_logs": [
+      "./reports/logs/01-browser-rag-fixture.log"
+    ],
+    "deploy_url": "https://ai-webgpu-lab.github.io/exp-rag-browser-pipeline/",
+    "screenshots": [
+      "./reports/screenshots/01-browser-rag-fixture.png"
+    ]
+  }
+}
