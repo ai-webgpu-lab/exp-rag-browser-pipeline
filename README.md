@@ -54,6 +54,12 @@
 - 기본 bootstrap workflow는 `public/` baseline probe 정적 artifact를 배포합니다.
 - 실제 빌드가 필요한 저장소는 install/build 단계와 artifact 경로를 저장소 사양에 맞게 교체해야 합니다.
 
+## 조직 상태 대시보드
+- 전체 Pages/demo 상태는 `docs-lab-roadmap/docs/PAGES-STATUS.md`에서 확인합니다.
+- 이 저장소의 live demo는 `https://ai-webgpu-lab.github.io/exp-rag-browser-pipeline/`입니다.
+- 통합 sketch/adapter 상태는 `docs-lab-roadmap/docs/INTEGRATION-STATUS.md`에서 확인합니다.
+- sketch capabilities는 `docs-lab-roadmap/docs/SKETCH-METRICS.md`에서 확인합니다.
+
 ## 측정 및 검증 포인트
 - first-token or first-result latency, steady-state throughput
 - model load time, cache behavior, worker/off-main-thread 영향
